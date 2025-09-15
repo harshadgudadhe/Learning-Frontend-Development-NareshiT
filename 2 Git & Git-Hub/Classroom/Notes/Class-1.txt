@@ -36,6 +36,7 @@ Git: Is Version Control System. It's distributed in Nature. so It's also called 
                 -> git add fileName or git add . (for add all file) 
                 -> git commit(to save) 
                 -> git commit -m (message)"Explaination"
+                -> git push -u origin main/master.
                 -> for the first time, you need to verify who are you 
                 -> git log (to check history)
 
