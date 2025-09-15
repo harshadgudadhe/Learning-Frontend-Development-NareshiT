@@ -1,0 +1,21 @@
+h1
+{
+    color:#f0f8ff;
+    color: transparent;
+}
+
+h2
+{
+    color: rgb(255,0,255);
+}
+
+body
+{
+    background-color: antiquewhite;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+    background-attachment: fixed;
+    background-image: linear-gradient(to right, red,green);
+}

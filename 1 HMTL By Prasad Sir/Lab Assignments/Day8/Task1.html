@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>1. Software Training Institute Registration Form</h2>
+    <form action=".java">
+        <fieldset>
+            <legend>Personal Details</legend> <br>
+            <label for="fn"> Full Name: </label>
+            <input type="text" name="fname" id="fn"> <br><br>
+            <label for="ea">Email Address: </label>
+            <input type="email"> <br><br>
+            <label for="pn">Phone Number: </label>
+            <input type="number" name="pnum" id="pn"> <br> <br>
+            <label for="Qua">Highest Qualification Details:</label>
+            <select name="Qualification" id="Qua">
+                <option value="" selected disabled >--Select Education Level--</option>
+                <optgroup disabled>Bachelors</optgroup>
+                <option value="">BCA</option>
+                <option value="">BSC</option>
+                <option value="">B.Tech</option>
+                <option value="">BE</option>
+
+                <optgroup disabled>Masters</optgroup>
+                <option value="">MCA</option>
+                <option value="">MSC</option>
+                <option value="">M.Tech</option>
+                <option value="">ME</option>   
+            </select>
+            <br><br>
+            <label for="Es">Employment Status:</label> <br>
+            <input type="radio" name="Es" id="st"> Student  <br>
+            <input type="radio" name="Es" id="ep"> Employed <br>
+            <input type="radio" name="Es" id="ue"> Unemployed <br>
+            <input type="radio" name="Es" id="se"> Self-employed <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Selection</legend> <br>
+            <label for="cc">Course Category:</label>
+            <select name="" id="cc">
+                <optgroup></optgroup>
+                <option value="" selected disabled>--Select Category--</option>
+                <option value="">Java Full Stack Developement</option>
+                <option value="">.Net Full Stack Developement</option>
+                <option value="">Full Stack UI/UX Developement</option>
+                <option value="">Full Stack Software Testing</option>
+            </select> 
+            <br> <br>
+
+            <label for="sc">Specific Course:</label>
+            <select name="" id="sc">
+                <optgroup></optgroup>
+                <option value="" selected disabled>--First Select a Category--</option>
+                <option value="">Full-Stack</option>
+                <option value="">Front-end</option>
+                <option value="">Back-end</option>
+                <option value="">Software Testing</option>
+            </select>
+            <br> <br>
+
+            <label for="cl">Course Level:</label><br>
+            <select name="" id="cl">
+                <optgroup></optgroup>
+                <option value="">--Select Level--</option>
+                <option value="">Beginner</option>
+                <option value="">Intermediate</option>
+                <option value="">Professional</option>
+            </select>
+            <br> <br>
+            <label for="pbt">Preferred Batch Timing:</label><br>
+            <select name="" id="pbt">
+                <optgroup></optgroup>
+                <option value="" selected disabled>--Select Timing--</option>
+                <option value="">Morning Batch</option>
+                <option value="">Afternoon Batch</option>
+                <option value="">Evening Batch</option>
+                <option value="">Weekend Batch</option>
+            </select>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Technical Background</legend> <br>
+            <label for="plk">Programming Languages Known(Select all that apply):</label><br>
+            <input type="checkbox" name="" id="plk"> Java  <br>
+            <input type="checkbox" name="" id=""> Python  <br>
+            <input type="checkbox" name="" id="plk"> Javascript <br>
+            <input type="checkbox" name="" id=""> C#  <br>
+            <input type="checkbox" name="" id="plk"> C++ <br>
+            <input type="checkbox" name="" id=""> PHP <br>
+            <input type="checkbox" name="" id="plk"> Ruby <br>
+            <input type="checkbox" name="" id=""> Other <br> <br>
+
+            <label for="ype">Years of Programming Experience:</label>
+            <input type="number"> <br><br>
+
+            <label for="tb">Technical Background:</label> <br>
+            <textarea name="" id="" cols="40" rows="4" placeholder="Describe what you hope to achieve through this training..."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Details:</legend> <br>
+            <label for="pm">Payment Method:</label> <br>
+            <input type="radio" name="pm"  id="cc"> Credit Card  <br>
+            <input type="radio" name="pm" id="dc"> Debit Card  <br>
+            <input type="radio" name="pm" id="bt"> Bank Transfer  <br>
+            <input type="radio" name="pm" id="pp"> PayPal <br> <br>
+
+            <label for="pp">Payment Plan:</label><br>
+            <select name="" id="pp">
+                <option value="" selected disabled>--Select Payment Plan--</option>
+                <option value="">One-Time</option>
+                <option value="">Monthly Installments</option>
+                <option value="">Quarterly Payments</option>
+            </select>
+            <br><br>
+
+            <input type="checkbox" name="" id="dis"> 
+            <label for="dis">Apply for Early Bird Discount(if available)</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Details:</legend> <br>
+            <label for="ref">How did you hear about us?</label> <br>
+            <select name="" id="" >
+                <option value="">--Select Option--</option>
+                <option value="">Social Media</option>
+                <option value="">Friend/Family</option> 
+            </select>
+            <br><br>
+
+            <label for="goals">What are your lerning goals?</label><br>
+            <textarea name="" id="goals" cols="40" rows="4" placeholder="Describe what you hope to achieve through this training..."></textarea> <br><br>
+
+            <input type="checkbox" name="" id="subsc">
+            <label for="subsc">Subscribe to our newsletter for updates on new courses and offers</label><br><br>
+            <input type="checkbox" name="" id="consent">
+            <label for="consent">I agree to the Term & Conditions.</label><br>
+        </fieldset>
+        <br>
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+        <br>
+    </form>
+</body>
+</html>

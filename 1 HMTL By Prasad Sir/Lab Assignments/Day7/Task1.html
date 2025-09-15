@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>HTML Forms Demonstration</h1>
+    <form action=".java" method="post">
+       <h3>1. Contact Form</h3>
+       <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fn">Full Name:</label>
+          <input type="text" name="Fname" id="fn" placeholder="John Doe"> <br><br>
+          <label for="ea">Email Address:</label>
+          <input type="email" name="email" id="ea" placeholder="example@domain.com"> <br><br>
+          <label for="pN">Phone Number:</label>
+          <input type="number" name="pNumber" id="pN" placeholder="123-456-7890"><br><br>
+          <label for="msg">Your Message:</label> <br>
+          <textarea name="feedback" id="" cols="40" rows="5"></textarea> <br><br>
+          <input type="checkbox" name="select" id="sel">
+          <label for="sel">Subscribe to our newsletter</label> <br><br>
+          <button type="submit">Submit</button>
+          <button type="reset">Clear Form</button>
+       </fieldset>
+    </form>
+
+
+    <h3>2.User Registration Form</h3>
+    <form action=".java">
+        <fieldset>
+            <legend>Create Account</legend>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+            <br><br>
+            <label for="pass"> Password:</label>
+            <input type="password" name="password" id="pass">
+            <br><br>
+            <label for="cpass">Confirm Password:</label>
+            <input type="password" name="cpassword" id="cpass">
+            <br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob">
+            <br><br>
+            <label for="gen">Gender:</label><br>
+            <input type="radio" name="gen" id="gen"> Male <br>
+            <input type="radio" name="gen" id="gen"> Female <br>
+            <input type="radio" name="gen" id="gen"> Other <br><br>
+            <label for="c">Country:</label>
+        <select name="select country" id="c" group="Select Country">
+            <option value="" selected disabled>-Select Country--</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+        </select> 
+        <br><br>
+        <input type="checkbox" name="select" id="cb">
+    <label for="">I agree to the <a href="">Term and conditions</a></label>
+    <br><br>
+    <button type="submit">Register</button>
+        </fieldset>
+    </form>
+
+    <h3>3.Customer Feedback Survey</h3>
+    <form action=".java">
+    <fieldset>
+    <legend>Survey Information</legend>
+    <label for="range">How satisfied are you with our service?</label><br>
+    <input type="range" name="satisfaction" id="range" min="1" max="10"> <br><br>
+    <label for="choice">Which products have you used?(select all that apply)</label><br>
+    <input type="checkbox" name="choice1" id="choice">Product A <br>
+    <input type="checkbox" name="choice1" id="choice"> Product B <br>
+    <input type="checkbox" name="choice1" id="choice"> Product C <br>
+    <input type="checkbox" name="choice1" id="choice"> Product D <br>
+    <br>
+    <label for="choice">How often do you use our services?</label><br>
+    <select name="Please Select" id="choice">
+        <option value="" selected disabled>--Please Select--</option>
+        <option value="">Wi-fi</option>
+        <option value="">Washroom</option>
+        <option value="">Room-Cleaning</option>
+        <option value="">Staff</option>
+        <option value="">Behaviour</option>
+    </select>
+    <br><br>
+    <label for="fb">Do you have any suggestions for improvement?</label><br>
+    <textarea name="feedback" id="fb" cols="40" rows="5"></textarea> <br><br>
+    <label for="ch"> How likely are you to recommend us?</label><br>
+    <input type="radio" name="recommend" id="ch"> Very Likely <br>
+    <input type="radio" name="recommend" id="ch"> Likely <br>
+    <input type="radio" name="recommend" id="ch"> Neutral <br>
+    <input type="radio" name="recommend" id="ch"> Unlikely <br>
+    <input type="radio" name="recommend" id="ch"> Very Unlikely <br><br>
+    <button type="submit" >Submit Survey</button>
+</fieldset>
+    </form>
+
+</body>
+</html>

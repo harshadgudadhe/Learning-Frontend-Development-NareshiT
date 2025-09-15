@@ -1,0 +1,481 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                         DAY 1
+                                                                                            Date : 19/08/25
+----------------------------------------------------------------------------------------------------------------------------------------------
+CSS : 
+-----Stands for cascading style sheet.
+     cascading refers to the styles that are applied to elements in a web page. CSS is used to style/design the layout or appearance of web pages.
+
+     CSS can be used in HTML in three ways :
+        i.  Inline 
+        ii. Internal
+        iii.External
+
+        Inline Styling: Its used to apply styles to specific elements suing "style" attribute.
+                    Example: 
+                        <element style="property: value;"> 
+
+        Internal Styling: Its used to apply styles to specific elements or multiple elements using selectors and style as an "element".
+                    Example: 
+                        <style> 
+                           selectors
+                           {
+                            property: value;
+                           }
+                        </style>
+            
+        External Styling: Its used to apply styles to single/multiple element in a seprate file with  ".css" file and attach it to the HTML using "link" tag.
+                    Example:     
+                        <link rel="stylesheet" href="path of file">
+
+             
+        [Note: 
+                i. Inline Styling peference [>] Internal & External Styling peference.
+               ii. CSS styles of internal and external can override each other based on which comes last.
+                   "!important" is the highest peference for property
+                    h1
+                    {
+                        property : value !important
+                    }       
+                           
+        ]   
+
+
+
+        selectors: To apply styles to  multiple elements, we need to select the elements.For that, we use selectors. 
+                   Most common selectors are:
+                            i. Tag name selector: Its used to select all elements of specific tag name.
+                                        Example:
+                                                tagName                      
+                                                      {
+                                                        property : value !important
+                                                      } 
+
+                            ii. Class selector: Its property/attribute for element to elements which is used to select multiple elements. 
+                                                One element may contain multiple class names & multiple element 
+                                        Example:
+                                                .className
+                                                {
+                                                    property : value;
+                                                }
+                                        note: An element can have more than one className.
+                                              And more than one element can have same className.
+
+                           iii. ID Selectors: Used to identify an element uniquely, We can give only one id to an element.
+                                              No more than one elementcan have same id. 
+                                        Example: 
+                                                #idName
+                                                {
+                                                    property : value;
+                                                }
+
+                            iv. Universal selector: Used to style the whole Html document, we can use Universal selector.
+
+                                        Example: 
+                                                *{
+                                                   property: value;
+                                                 }
+                                              
+Note:   !important attribute  <  id selector   <   class Selector    < tagName selector   < Universal selector
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                    DAY 2
+                                                                                            Date : 20/08/25
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+1.  Colors: 
+        Decide the brand & user interface of web page. Its recommended to use Colors as per brand.  
+        => colors can be mentioned in css in multiples ways:
+                      i. Hexcode: its a 6 digit code followed by "#".
+                     ii. RGB(Red Green Blue): Any color can be represented as combination of RED-GREEN-BLUE from 0 to 255 (Total 256 means 1 bit).
+                    iii. Color Name: VS-code provides multiple colorswith name.
+        Suggestion:  Websites for best color-matching: "coolors".
+
+2.  Fonts: Every font-family in world belongs any one of 5 types are:
+         i: serif: This fonts have stroke/sharpness ion corner/ eg. Times Roman(used in news-paper).
+        ii:sans-serif: This fonts not have stroke/sharpness. eg. Arial,Calibri (easy to read).
+       iii:Mono-Space: This fonts have equal height of letters. eg.MS Gothic.
+        iv: Cursive: This fonts are used for styled and curved.eg. script MT(not easy to read.)
+         v: Fantasy: This fonts are used for special effects
+
+
+    How to get this fonts in webpages:
+        Properties: 
+            i.  font-family: Its used to apply fonts to specific element.
+                    Example: 
+            ii. font-weight: Its used to change the thickness of font. (like: from 0-900 or bold or bolder)
+                    Example:
+            iii.font-style: Its used to change the style of the font.(like: normal/Italic/..etc)
+                    Example:
+             iv.font-size: Its used to change size of the fonts.
+                    Example:
+            Suggestion: Use this websites for multiple style of fonts. 
+                    eg: Google Fonts, Adobe Fonts.
+                    process: 'serch google fonts" -> select font font style -> click "get font" -> click "get embed code" -> select "@import" and copy the code to css.
+
+
+3. Units : Used to measure  the size of elements. Most used units are : 
+            i.  px (pixels): Its smaleest unit of screen
+            ii. % (percentage): Its used X% of parent's element size. Its not fixed in size , its always depends of parent elements size. 
+            iii.vh/vw(viewport hieght/width): Its is the x$ of viewport(screen) hieght or viewport width. 
+            iv. em (): 
+            v.  rem (): 
+
+4. Background: Used to assign Background color or Background-image to the web-page. 
+               using following properties:
+                    i. background-color: Used to assign bg color using 
+                       Example: background-color: antiquewhite;
+                    ii.background-image: Used assign bg images using "URL" or "Gradients". 
+                       Example: background-image: url("");  or background-image: linear-gradient(to right, red,green);
+                       OR
+                       Gradient: Are mixer of multiple colors. like "linear-gradient" , "radial-gradient"
+                       Example: background-image: linear-gradient(to right, red,green);
+                    iii.background-repeat: It can be repeat as per property value (repeat/repeat-x/repeat-y/no-repeat).
+                       Example: background-repeat: no-repeat;
+                    iv. background-position: It 
+                       Example: background-position: center;
+                    v. background-size: Decides the size of background like (auto/cover/contain)
+                       Example: background-size: cover;
+                    vi.background-attachment: auto/fixed/scroll         
+                       Example: background-attachment: fixed; 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                    DAY 3
+                                                                                            Date : 21/08/25
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Linear Gradiants: gradients are the transformation of one color to another. Linear gradient assigns colors in straight way.
+                Example: 
+                     background-image: linear-gradient(position,color1,color2,...)
+                     position can be to left/to right/to bottom/to top/xdeg
+                we can even assign the gradient or image to text 
+                     color: transprent;
+                     background-image: linear-gradient(color1,color2);
+                     background-clip: text;
+
+Radial Gradiants: Linear gradient assigns colors in circular way.
+                Example: 
+                     background-image: linear-gradient(position,color1,color2,...)
+
+
+Box-Modal:
+          Browser treat every element as box. A box contains :
+          i. border
+          ii.border-radius
+          iii.padding
+          iv. margin
+
+          i. border: border is the srounding-line for an element.
+                     Example:
+                          border: size shape color ;
+                we can even assign border-left/right/top/bottom.
+                     Example:
+        ii. border radius: Its a corner radious srounding border corners.
+                     Example: border-radious:size;
+                50% of radius make actual circle for square shape.
+                we can also assign each corner radius seprately. 
+        iii. padding: space in-between border and actual content inside element.
+                     Example: padding: size;
+                we can also assign padding as padding-left/right/top/bottom.
+                Normally padding makes each box increase its height or width bcoz by default all are content boxes. so we need to use.
+                     Example: box-sizing: border-box;
+                              
+        iv. margin: space in between two elements.
+                     Example: margin: size;
+                we can also assign margin as margin-left/right/top/bottom.
+                margin can be negative (-ve) also. 
+
+
+   Notes: Website suggestion for practice "CSS Battle".
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                    DAY 4
+                                                                                            Date : 22/08/25
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Box-Model
+float, display
+position
+flex
+gradienttransitions,animations
+Adv. CSS
+Responsiveness(media Queries)
+HTML, CSS website
+
+                                        Float, Display:
+                                      ------------------
+Float:
+---------------    Its used to make any element floating to the left or right side of screen, it makes the element remove from actual execution and next element takes up the space of floating element.
+                   syntax: 
+                          float: left/right/none;
+                   we can even clear floating element for any other element using "clear" property.
+                   syntax:
+                          clear : left/right/both;
+
+
+Display : 
+---------
+          Is used to arrange elements in aspecific way.
+
+          1. display: block => will make the ele into block so that each element will display in new line,.
+          2. display: Inline => will make the element into Inline so tha each element comes in same line followed by the previous element(maintain same flow).
+                Note: Inline element cant handle the height/width/vertical margins.
+          3. display: Inline-block => work like inline but accept the height  & width also.
+          4. display: none; => removes the elements(visibility: hidden just hides the element).
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                    DAY 5
+                                                                                                Date : 23/08/25
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Position:  Position is used to keep elements at different places in user interfaces. There are 
+
+
+Types of position: 
+        There are 5 types of position as following:
+        1. Static
+        2. Absolute
+        3. Fixed
+        4. Relative
+        5. Sticky 
+
+1. Static: By default, all elements are static. Staic elelemnets  can't top,left,right,bottom etc
+
+1. Absolute: Elements move according to the position of body, so left:100px will actually move towards leftmost end of screen.
+             Scrolling have impact on Absolute.
+
+3. Fixed: elements also move accordinglybody but will not scrollable.
+
+4. Relative: elements move accordingly position of currenrt position. so, left: 0px will have no impact toward it.
+
+5. Sticky: nothg but relative + fixed, so initially it stays like relative but once it reaches certain point, it becomes fixed untill it parent end reached.
+
+
+Projects Purpose:
+        1. A website shouldn look beautiful.
+        2. A website should have a purpose. 
+
+Note: We can't use Float & Position at same time for same elements.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                    DAY 6
+                                                                                                Date: 25/08/25
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FlexBox: used to arrange the elements in single direction. Either row or column.
+-------- 
+    Parent Properties:  Flexbox allow its parent to have below properties, like:
+
+       1. display: flex  -- used to arrange child items in single direction(default row).
+       2. flex-direction -- used to arrange child items in specific direction(row/column/row-reverse/column-revrse)
+       3. gap --            used to provide gap between items.
+              Axis in which elements are arranged is called main axis and Axis in which elements not arranged(opposite to main axis) is called cross axis 
+       4.  justify-content -- used to move the elements along the main Axis(left/right/center/start/end/space-between/space-around/space-evenly).
+       5.  align-items -- used to move the elements along the cross axis (left/right/center/end).
+       6.  flex-wrap -- used to wrap the Elements into new lines.
+       7.  align-content -- used to move the lines done by flex wrap. (used for moving columnwise/vertical)
+
+Note: Website "FlexBoxLabs.netlify.app"
+      website "Flexbox Froggy"      
+
+Parents work is to arrange.
+and 
+only child element can only arrange elements in the specific rank/order.
+    There are some imp. child properties: 
+      1. order: used to arrange child items individually at any place. by default order is 0. and elements are arranged based on ascending order.
+      2. align-self: used to adjust elements individually across cross -axis.
+      3. flex-shrink: used to shrink more than the other elements.
+      4. flex-grow: used to grow more than the other elements.
+      5. flex-basis: used to keep an element as it is.(No gonna shrink/grow).
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                    DAY 7
+                                                                                                Date: 26/08/25
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Website: "Front-end mentor"
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                    DAY 8
+                                                                                                Date: 28/08/25
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Grid: is modern responsive CSS layout which is used to display items / element in two-dimensional way(rows & column) in web page.
+
+Parent Properties: 
+    display: grid; => its used to make the container grid and it fits all its child as a single columns.
+    grid-template-columns; => used to specify individual columns width
+    grid-template-columns => 100px 50px 200px; creates 3 columns of respective widths.
+    grid-template-columns => 20% 50% 30%; creates 3 columns of respective widths.
+    grid-template-columns => 1fr 2fr 3fr; divides into 3 columns of respective fractions.
+    we can also specify repeat(n,x) where is n is no of time to repeat x,y value
+    grid-template-rows; => its used to specify each rows height similarly grid template-columns 
+      gap => used to provide gap between the items. we can also specify row-gap and column-gap.
+      justify-content =>  used to move items along column.
+      align-content => used to move items along column.
+
+
+Child Properties: 
+    we need to divide and understand grid as grid tracks(grid row line & column lines).
+
+Grid Lines: The heart of grid-sytem. 
+     grid-column-start: starting column line number.
+     grid-columns-end: ending column line number.
+     grid-column: grid-column-start/grid-column-end;
+     grid-row-start: starting row line number.
+     grid-row-end: ending row line number.
+     grid-row: grid-row-start/grid-row-end;
+     grid-area: grid-row-start/grid-column-start/grid-row-end/grid-column-end;
+     order: by default every element order is 0 and elements arranged according to the increasing order.
+     
+Website: "Grid Garden"
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                    DAY 9
+                                                                                                Date: 29/08/25
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Worked on mini-project: "Harshad Fashions Home Page"
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                    DAY 10
+                                                                                                Date: 30/08/25
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Transitions: These effects are used to change an element from 1-state to other-state. usually used in hover effect.
+-----------
+      Transition contains 
+            Transition-property: property-name or all.
+            Transition-duration: time in seconds.
+            Transition-timing-function: ease/ease-in/ease-out/ease-in-out/linear
+
+      We can achieve multiple effecs using it with properties 
+      like : transform, filter, opacity etc.
+            i. rotate effect:
+                #box
+                {
+                   transition: all 1s ease;
+                }
+
+                #box:hover
+                {
+                        transform: rotate(360deg);
+                }
+
+            ii. Sliding effect:
+                #box
+                {
+                   transition: all 1s ease;
+                }
+
+                #box:hover
+                {
+                    transform: translateX(200px); or transform: translateY(200px);
+                }
+           iii. Skew/elongation effect:
+                #box
+                {
+                   transition: all 1s ease;
+                }
+
+                #box:hover
+                {
+                        transform: skew(20deg);
+                }
+            iv. zoom-in/zoom-out: effect:
+                #box
+                {
+                   transition: all 1s ease;
+                }
+
+                #box:hover
+                {
+                        transform: scale(1.1);
+                }
+
+
+website: "cssbuttons".
+
+Media Queries:
+--------------
+     Used for responsive of the website, we can make styles(css) works for specific widths.
+     eg:
+        large devices --> 1400px
+        laptop --> 1280px - 1400px
+        desktop --> 1080px - 1280px
+        tablets --> 768px - 1080px
+        mobiles(landscape) --> 576px - 768px
+        mobiles(landscape) --> 0px - 576px
+
+        Best Approach for web design is Mobile First Design.
+        
+        Examples:
+                @media(min-width:1280px) and (max-width:1400px)
+                {
+
+                }
+
+                @media(min-width:1080px) and (max-width:1280px)
+                {
+                        
+                }
+
+                @media(min-width:768px) and (max-width:1080px)
+                {
+                        
+                }
+
+                @media(min-width:576px) and (max-width:768px)
+                {
+                        
+                }
+
+                @media(min-width:0px) and (max-width:576px)
+                {
+                        
+                }
+
+  websites:
+  ---------
+           "freecodecamp"
+           "frontendmentor.io"
+           "cssbattle.dev"
+           "media queries breakpoints"
+            etc.
+
+insipration: prasadfashions.netlify.app
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                    DAY 11
+                                                                                                Date: 01/09/25
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Animations: 
+------------
+            Are used to make an element goes through multiple states. Every Animation contain following properties such as 
+                1. animation-name: name of animation.
+                2. animation-duration: time of animation in (milisecs/secs). 
+                3. animation-timing-function: control the speed of animation
+                4. animation-delay: time to delay the animation in (milisecs/secs).
+                5. animation-iteration-count: number of time animation repeats(number or infinite)
+                6. animation-direction: decides which direction of animation should run(normal/reverse/alternate/alternate-reverse).
+                7. animation-fill-mode:                    
+
+           Short-hand : animation: name duration timing-function delay iteration-count direction fill-mode;

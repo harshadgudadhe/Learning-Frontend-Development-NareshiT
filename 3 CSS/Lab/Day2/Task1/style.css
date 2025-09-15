@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.divv
+{
+    height: 100vh;
+    width: 100vh;
+}
+
+.div
+{
+    height: 120px;
+    width: 25%;
+    margin: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+}
+
+#div1
+{
+    border: 1px solid rgb(49, 173, 226);
+}
+
+#div2
+{
+    border: 1px solid rgb(220, 117, 14);
+}
+
+#div3
+{
+    border: 1px solid rgb(10, 199, 117);
+}
+
+
+#div4
+{
+    border: 1px solid rgb(86, 20, 207);
+}

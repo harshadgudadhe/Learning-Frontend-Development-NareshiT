@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+image
+{
+    height: 100px;
+    width: 150px;
+    float: right;
+}
+
+p
+{
+    clear:right;
+}
+
+.divv
+{
+    height: 100px;
+    width: 100px;
+    color: azure;
+    margin: 10px;
+    display: inline-block;     /* This property is used to make block element to behave like inline element */
+    /* display: none; */
+    visibility: hidden;      /* This property is used to make element in-visible only but it keep the space as it is.*/
+}

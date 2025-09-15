@@ -1,0 +1,47 @@
+Git: Version Control System by Oracle.
+
+Git-hub: Website by Microsoft.
+___________________________________________________________________________________________________________________________________________
+
+                                                      Git
+                                                  ===========
+
+Git: Is Version Control System. It's distributed in Nature. so It's also called as "Distributed Version Control System."
+----
+     => What is Version control system ?
+
+
+     => How to download Git ?
+        Steps:
+              0. 
+              1. Git for windows/x64 setup.
+              2. Just do yes,yes,.....untill it installed.
+              3. Go to CMD(Command Promte)
+              4. use  ">git -v"  by using this command we can check the version of git to make sure that git is installed properly or not.
+              5. How git is working:
+                                   -> working directory (git add)     -> 
+                                   -> staging area      (git commit)  -> go to local repo.
+                                   -> repository
+
+              6. Step-by-step for first-time:
+
+                -> open vscode
+                -> open code folder 
+                -> open Terminal 
+                -> git init 
+                -> git config --global user.name "username"
+                -> git config --global user.email "your email"
+                -> go "github.com" account.
+                -> git remote add origin "link/path"
+                -> git add fileName or git add . (for add all file) 
+                -> git commit(to save) 
+                -> git commit -m (message)"Explaination"
+                -> for the first time, you need to verify who are you 
+                -> git log (to check history)
+
+        we need one website to store, share, deploy our code called "github"
+        -> go "github.com" account.
+        -> git remote add origin "link/path"
+        -> git push -u origin main/master.
+        -> on every change, repeat  5,6 7 10
+        

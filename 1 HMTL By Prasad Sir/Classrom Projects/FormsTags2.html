@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="survey.java">
+        <h1 style="text-align: center;">Registraion Form</h1>
+        <label for="Name">Full Name: </label>
+        <input type="text" id="Name"> <br><br>
+        <label for="sn">Father Name: </label>
+        <input type="Text" name="surname" id="sn"> <br> <br>
+        <label for="gen">Gender:</label>
+        <input type="radio" name="Gender" id="gen" checked> Male 
+        <input type="radio" name="Gender" id="gen"> Female  <br><br>
+        <label for="DOB">DOB:</label>
+        <input type="date"> <br><br>
+        <label for="">Language: </label>
+        <input type="checkbox" name="lang" id="lang"> Marathi <input type="checkbox" name="lang" id="lang"> Hindi  <input type="checkbox" name="lang" id="lang">English<br><br>
+        <label for=""> Select Course: </label>
+        <select name="course" id="" multiple size="10">
+             <optgroup label="Developement">
+                <option value="1">C Lang</option>
+                <option value="2">C++</option>
+                <option value="3">Java</option>
+                <option value="4">Pyton</option>
+                <option value="5">C#</option>
+             </optgroup>
+        </select> <br><br>
+        <input type="hidden" name="class" value="X"> <br><br>
+        <label for="Address">Address: </label>
+        <textarea name="Address" id="addr" rows="10" cols="10" >Enter Your Address Here</textarea><br><br>
+
+        <button style="margin-left: 100px;">Submit</button>
+    </form>
+</body>
+</html>

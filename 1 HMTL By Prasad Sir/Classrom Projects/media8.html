@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body> 
+    <picture>
+        <source media="(min-width:1080px)" srcset="./BGMI.png">
+        <img src="./Goku.png" alt="Goku" height="200">
+    </picture>
+
+    <video height="200" controls autoplay muted loop>
+        <source src="./video.mp4" type="video/mp4">          <!-- mp3, mp4, mov, ..etc -->
+        <track>
+            <source src="./video.vtt" kind="subtitles" srclang="en" label="English">
+            <source src="./video.vtt" kind="subtitles" srclang="hi" label="Hindi">
+        </track>
+    </video>
+
+    <audio controls autoplay loop>
+        <source src="./audio.mp3" type="audio/mp3"> 
+    </audio>
+
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" width="560" height="315" frameborder="0" allowfullscreen>
+        
+    </iframe>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 800vh;
+    width: 500vh;
+}
+
+div
+{
+ display: inline-block;
+ margin: 3%;
+}
+
+.divv
+{
+    height: 100px;
+    width: 100px;
+    color: black;
+    border: 2px solid black;
+    margin: 40px;
+    text-align:center;
+    display: inline-block;
+    align-content: center;
+}
+
+#div1
+{
+    background-color: chartreuse;
+    position: static;
+}
+
+#div2
+{
+    background-color: red;
+    position:absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+#div3
+{
+    background-color: blue;
+    position:fixed;
+    left: 0%;
+    bottom: 0%;
+}
+
+#div4
+{
+    background-color: green;
+    position: relative;
+    margin: 10px;
+}
+
+#div5
+{
+    background-color: gold;
+    position: sticky;
+}

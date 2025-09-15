@@ -1,0 +1,464 @@
+What do you mean by web developement ?
+
+                                                    Lecture 4
+                                                                                                            Date: 4/8/25
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Images: <img>  used to insert images &  self-closing tag. Its also called void element or un-paired tag.
+     or <img/> will be better for practice.
+    => we can insert image using attribute "src="     & 
+    => "alt=" represent alternate title only if image doesn't work/load.
+    => we can also change size of image by using "hieght=" & "width=" attribute.
+    => website: unplash, freepick  etc.
+    => Sometimes we need images have description / caption , in that case we can use "figure tag" for image with caption.
+    Example:   <figure>
+               <img src="" alt=""/>
+               <figcaption> xxxxxx </figcaption>
+               <figure>
+
+Practical: 
+-----------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Resume </h1>
+    <p> My Name is Harshad Gudadhe </p>
+    <img src="./goku-musculoso-dragon-ball-z-amoled-minimal-black-5120x2880-4945.png" alt="Goku" height="75" >
+    <img src="../goku-musculoso-dragon-ball-z-amoled-minimal-black-5120x2880-4945.png" alt="Goku" height="100">
+    <figure>
+        <img src="./goku-musculoso-dragon-ball-z-amoled-minimal-black-5120x2880-4945.png" alt="Goku" height="100">
+        <figcaption> Here You are watching the Goku Wallpaper in HD Quality. </figcaption>
+    </figure>
+</body>
+</html> 
+
+---------------------------------------------------------------------------------
+
+website to host your front-end project: Netlify, Git-hub
+and
+for Full-Stack Projects : AWS,Azure,...etc.
+URL: projectName.netlify.app
+
+---------------------------------------------------------------------------------
+Different form of images:
+    i.  General Images will be in : jpg,jpeg format
+    ii. Transparent or Background removable will be in :
+    iii.High Quality images are in : webp, avif
+    iv. playable images are in : gifs
+                                 but gifs takes a lot time to load so better alternative for gifs are lottiefiles
+    v. icon images are in : .ico(fevicon) 
+
+_________________________________________________________________________________________________________________________________________
+
+
+                                                    Lecture 5
+                                                                                                            Date: 5/8/25
+----------------------------------------------------------------------------------------------------------------------------------------
+
+    Formatting Tags :
+        These tags are used to format the text such as making the text bold, italic, underlined......etc.
+
+                    <b> <b/> : used to make the text bold
+                    <strong> </strong> : used to make the text bold but SEO search it effectively as imp.
+
+                    <i> <i/> : used to make text "italic".
+                    <em> </em> : used to make text "italic".but SEO search it effectively as reference bcoz em means "emphasis".
+
+                    <u> </u> : used to make text "underlined".
+                    <ins> </ins> : used to make text "underlined".but SEO search it effectively as inserted text  bcoz ins means "insert".
+
+                    <s> </s> : used to make text "striked out".
+                    <del> <del/> : used to make text "underlined".but SEO search it effectively as deleted text.
+
+                    <mark> </mark> : used to Highlight the text like yellow marker.
+
+                    <sup> </sup> : to make the text superscript.
+                    <sub> </sub> : to make the text subscript.
+
+                    <pre> </pre> : used to display the text as it is  written in editor , it's means pre-defined text format. 
+                    <code> </code> : used to make the text as code (represnt code) or look like actual code.
+                      
+                    <kbd> </kbd> : used to make representation of keyboard short-cuts.
+
+                    <samp> </samp> : used for  represnt sample 
+
+                    <small> </small> : used to make the text small by one size.
+
+                    <abbr title="">  </abbr> : used for abbrevation , it comes with "Title" attribute which is used represent tooltip when mouse hover the text (means writting short form of word).
+
+                    <address>  </address> : used to represent the addresses.(its makes text italic)
+
+                    <blockquote> </blockquote> : refers quoted text from another source 
+
+                    <cite> </cite> : used to represnt source or creative  work 
+                     
+                    <q> </q> : used for double-quatation 
+
+                    <bdo dir="ltr"> </bdo> : used to writeb  by directional text , using attribute "dir" with value like "ltr" or "rtl".
+
+                    <time datetime="14 09 2001">  </time> : used to represent time for text to SEO like reminders.
+
+                    <progress max="100" value="50"> </progress> : used to display prograss bar with Max value & Current Values.
+
+
+            Tags we shouldn't use :  
+                Following tags are depricated so, suggested to not use them are : 
+
+                    <center> </center> : used to make text center. 
+
+                    <big> </big> : used to represent text big by size one.
+
+                    <marquee> </marquee> : used to make text scrollable .
+
+                    <font> </font> : used to represent font styles. 
+___________________________________________________________________________________________________________________________________________________
+
+
+                                                    Lecture 6
+                                                                                                            Date: 6/8/25
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+   Lists:
+        Lists are used to list out certain item in HTML. Instead of multiple paragraphs, content or single large text, user likes the data in lists.
+        Example: menus , features list 
+        lIsts are basically 3 types 
+          i.  ordered list
+          ii. unordered list
+          iii.definition or description list
+
+          i.  ordered list: Lists which need to be presented in order are called ordered list. They use <ol> </ol> tag. Each list item in list use ,<li> </li> tag.
+          example : 
+                    <ol>
+                        <li> HTML </li>
+                        <li> CSS </li>
+                        <li> JS </li>
+                        <li> Bootsrap </li>
+                        <li> JQuery </li>
+                    </ol>
+
+            we can use "Type" attribute. There are 5 types available(1/A/a/I/i).
+            we can start list from any value by using "start" attribute.
+
+          ii. unordered list: This is used to represent items where order is not mandatory.
+             example : 
+                    <ul>
+                        <li> Rice </li>
+                        <li> Oil </li>
+                        <li> Tomato </li>
+                        <li> Chocolate </li>
+                    </ul>
+
+         iii.definition or description list: This lists are used to define certain Values, to specify events etc..
+            where it use <dl> tag where each list item have two elements <dt> & <dd>
+        
+             example : 
+                        <h3> Definations </h3>
+                            <dl>
+                                <dt>HTML</dt>
+                                <dd>HyperText Markup Language</dd>
+
+                                <dt>CSS</dt>
+                                <dd>Cascading Style Sheet</dd>
+
+                                <dt>JS</dt>
+                                <dd>JavaScript</dd>
+                            </dl>  
+
+         iv. Nested List : List inside another list.
+             Example: 
+                    
+
+Two most used self-closing tags are : 
+
+        <br> : used to create Break line
+
+        <hr> : used to create Horizonetal line
+                          
+_________________________________________________________________________________________________________________________________________
+
+                                                    Lecture 7
+                                                                                                    Date: 7/8/25
+----------------------------------------------------------------------------------------------------------------------------------------
+Tables:
+       Used to represent the data in rows and columns . The Horizonetal line called "row" & the vertical called "column".
+       Whole table is in between table element. Each row in table is represent by "tr" .
+       Every row contains data using "th" or "td"(table headings or table data).
+
+Example : 
+       
+    <table border="1">
+        <tr >
+            <th>sno</th>
+            <th>name of subject</th>
+            <th>Marks</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Hindi</td>
+            <td>83</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Maths</td>
+            <td>89</td>
+        </tr>
+    </table>
+
+
+    Rowspan : To combine to rows.
+    Colspan : To combine to columns.   
+    Caption : used to represent the table description.
+    thead : used to combine certain rows as table head.
+    tbody : used to combine certain rows as table body.
+    tfoot:  used to combine certain rows as table. 
+    -----------------------------------------------------------------------------------------------------------------------------------
+
+
+                                                        Inline vs Block :
+                                                    ------------------------
+    In HTML , elements are classified into 2 types 
+
+    Inline : Are the elements that always takes place in same line . it allow any other element beside them.
+            Example: <span> tag.
+                     <span> tag : Is a inline element which is used to combine multiple elements as group but make the group as inline.
+
+    Block : Are the elements that always takes place in new line . it won't allow any other element beside them.
+            Example: <div> tag.
+                    <div> tag : Is a Block element which is used to combine multiple elements as group but make the group as block.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Non-Semantic Tags: 
+             
+
+Sematic Tags(HTML5): 
+        This element are also container elements like div & span but, this elements more understanble to SEO.
+        These elements are not make any difference in UI but it make difference to the code readability.
+        Example: 
+            header , Footer , Nav, aside, main, article, section.  
+_________________________________________________________________________________________________________________________________________
+
+                                                    Lecture 8
+                                                                                                Date: 8/8/25
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Media Tags:
+        HTML5 supports  lot of media elements such as responsive images, videos, audio, iframe etc..
+        1. Picture tag : picture tag allows the browser to choose different images based on device.
+                           it contains 'source' tags to provide sources with 'srcset' & make it work with 'media' for different devices.
+                           Always source media should be in decreasing order and need to keep default img tag at last.
+            Example:
+                    <picture>
+                        <source media="(min-width:1080px)" srcset="./BGMI.png">
+                        <img src="./Goku.png" alt="Goku" height="200">
+                    </picture>
+
+
+        2. Videos: We can include videos using 'video'  tag  whose source is provided by 'source'.
+                    i. Video tag use attribute like : 
+                    
+                            controls : Play, pause,download etc.
+                            muted: to mute the audio.
+                            autoplay: to play the video on page.
+                            google chrome will not support autoplay if its not muted.
+
+             Example:
+                        <video height="200" controls autoplay muted loop>
+                        <source src="./video.mp4" type="video/mp4">          <!-- mp3, mp4, mov, ..etc -->
+                            <track>
+                                <source src="./video.vtt" kind="subtitles" srclang="en" label="English">
+                                <source src="./video.vtt" kind="subtitles" srclang="hi" label="Hindi">
+                            </track>
+                        </video>
+
+        3. Audio Tags : This tag is used to display audios. It also uses source to deisplay specific audio.
+                              <audio controls autoplay loop>
+                                <source src="./audio.mp3" type="audio/mp3"> 
+                              </audio>
+
+
+        4. Track : Track is used to assign captions / sub-titles for videos , it use 'label' attribute for name , 'src' attribute for source file, 'srclang' attribute for 
+              Example: 
+                        <track>
+                                <source src="./video.vtt" kind="subtitles" srclang="en" label="English">
+                                <source src="./video.vtt" kind="subtitles" srclang="hi" label="Hindi">
+                        </track>
+
+        5.  iFrame : It is a internal frame to keep one html document inside another html file. 
+                     It allows different domains codes embed into another html document.
+               Example : 
+
+
+_______________________________________________________________________________________________________________________________________
+
+                                                    Lecture 10
+                                                                                                    Date: 11/8/25
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+HTML Forms: 
+     1. Forms are used to collect the data from web-pages 
+        Eg: Login, Sign-up/Register, forget password, survey, feedback, profile, email, newsletter, contact, appointment, checkout, complaint,....etc
+
+     2. Every form is between "Form" element. Form element contains inputs & buttons to submit or reset the forms.
+     3. Forms collect the data and send to the server via JavaScript.
+
+
+    Input:can be entered using 'input' tag. Input tag is a self-closing tag. Every input will have attribute like :
+    type: It defines the type of input it will hold.
+    placeholder :  A dummy text to hold the place, to make users understand what to type.
+    id : A name to identify only that elements uniquely.
+    placeholder: Instead of placeholder we can also use "Label" tag for label . Label tag contains attribute "for" which will contain target elements"id".
+
+
+Form Attributes : 
+         1. action -- file/page to submit the data.
+         2. method -- to represent the way to send the data. It is of two types "get" & "post".
+                get: will send the data & include the data in url.
+                post: will send the data but does not include in url.
+         3.  To send the data, every input should contain attribute 'name' to represent the name we use to send the data.
+         4. Different Types of inputs ;
+             => text: used for textual data.
+             => password:used for password data, it will makes text as solid dots.
+             => email : used for email-address, it check for "@" symbol.
+             => number: for only numerical inputs, expect number it will not accept anything.
+             => date: it will provide specific date.
+             => datetime-local: used to choose specific date & time .
+             => Month:week is used to select week. 
+             => File: File is used to upload files.
+             => URL : url is used to enter only valid urls.
+             => Colour: used to select specific colour using. 
+             => Range : used to select a pecific range using slider. 
+             => Week:
+
+_______________________________________________________________________________________________________________________________________
+
+                                                    Lecture 11
+                                                                                                        Date: 12/08/25
+----------------------------------------------------------------------------------------------------------------------------------------
+
+             => Radio buttons: This buttons are used to select a single / any one choice 
+                Example: Gender selection.
+
+             => Checkbox: Are used to select multiple options at a time.
+                Example: Language selection.
+
+             => Drowp-down(select): Sometimes, we need to select from loat of options. Either singular or  multiple choices can be selected using select. select contains "options" tag with each option having "value" attribute.
+                Example: Slect country or college or course name. 
+                            <label for=""> Select Course: </label>
+                            <select name="course" id="" multiple size="2">
+                               <optgroup label="Developement">
+                                    <option value="1">C Lang</option>
+                                    <option value="2">C++</option>
+                                    <option value="3">Java</option>
+                                    <option value="4">Pyton</option>
+                                    <option value="5">C#</option>
+                                </optgroup>
+                            </select> <br><br>
+                Attributes: 
+               ------------
+                     -> multiple : We can select multiple options.
+                     -> size : We can decide max selection size, 
+                     -> hidden :used to hide input such that server can get data along with user submitted data without user's knowledge.
+                                <input type="hidden" name="class" value="X"> <br><br>
+                     -> checked : 
+                     -> text-area: used for large amount of data, used for feedbacks, messages,addresses,..... etc.
+                                   value can be change using rows & columns Values.
+                        
+                        <textarea name="Address" id="addr" rows="10" cols="10" >Enter Your Address Here</textarea><br><br>
+                        
+
+_______________________________________________________________________________________________________________________________________
+
+                                                    Lecture 12
+                                                                                                        Date: 13/08/25
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Form Validations : 
+------------------
+                Is it possible to validate inputs in HTML without JS?
+                Yes, it's possible using some attributes 
+                such as : required , max, min, pattern , etc   
+                   => required: it is used to make input field mandatory before submitting the form.
+                   => min : it is used to provide minimum value to number.
+                   => max : it is used to provide maximum value to number.
+                   => minLength: it is used to provide minimum length()  to text input.
+                   => maxLength: it is used to provide maximum length()  to text input.
+                   => disabled : used to make an input diabled and it will not submitted. 
+                   => readonly : used to make input only readable and it will be submitted with the form. 
+
+
+RegEx:
+------ 
+        RegEx used to validate patterns, 
+        such as: inputs , data etc. They match patterns like a string and it uses lot of symbol and each symbol with different meaning/purpose.
+
+        1. [] used to represent a group.
+        2. {} used to set Range of input.
+           {a}
+           {a,}
+           {a,b}
+        3. \d--digits, \w--words, 
+        4. . -- wildcard : any character.
+        5. * -- 0 or more of previous  value.
+        6. + -- 1 or more of previous value.
+        7. ? -- 
+
+HTML5:
+      Responsive media(picture), semantic element(header, footer, nav, figure), svg, canvas, etc...
+
+      => svg(scalable vector graphics): advance feature in HTML which is used to draw graphics in HTML.
+      => canvas: 
+
+
+_______________________________________________________________________________________________________________________________________
+
+                                                    Lecture 13
+                                                                                                            Date: 14/08/25
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Patterns :
+----------
+        Examples: 
+        => [A-Z]{4}[0-9]{4}  : 
+        => [A-Z]+[a-z]+[0-9] :
+        => [a-z A-Z]{4,8}    :
+        => 
+
+SVG (scalable vector graphics):   Advance feature in HTML which is used to draw graphics in HTML. 
+-------------------------------   
+                                  
+        Examples:
+        =>  We can draw circles using 
+            <svg>
+                <circle cx="20" cy="100" r="50" ></circle>
+            </svg>
+        =>  We can draw Rectangle using
+            <svg>
+                <rect x="20" y="20" height="100" width="200" fill="green"></rect>
+            </svg>
+        =>  We can draw Rectangle using
+            <svg>
+                <path d="M 20 20 L 60 50 L 30 10 L 20 20 Z" fill="red"></path>
+            </svg>
+
+
+Canvas:   HTML5 also offers canvas, geolocation, drag & drop and data attributes.
+-------   This things will required JS code to make work.
+        Examples:
+        => 
+
+___________________________________________________________________________________________________________________________________________________
+
+Git & Git-hub: 
+-------------- 
+              
+              

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables with Rowspan and colspan</title>
+</head>
+<body>
+    <h1>Demonstration of Table Rowspan and colspan Attributes</h1>
+    <h2>Table 1: colspan Examples</h2>
+    <table border="1" cellspacing="0' cellpadding="5">
+        <tr>
+            <th colspan="2">Full Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>30</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>Smith</td>
+            <td>25</td>
+            <td>London</td>
+        </tr>
+        <tr>
+            <td colspan="2">Michael Jordan</td>
+            <td>60</td>
+            <td>Chicago</td>
+        </tr>
+        <tr>
+            <td>Emily</td>
+            <td>White</td>
+            <td>35</td>
+            <td>Paris</td>
+        </tr>
+        <tr>
+            <td colspan="3">Total Participants</td>
+            <td>4</td>
+    </table>
+
+
+    <h2>Table 2: rowspan Examples</h2>
+    <table border="1" cellspacing="0" cellpadding="5">
+
+       <tr>
+            <th>Department</th>
+            <th>Employee</th>
+            <th>Role</th>
+            <th>Status</th>
+       </tr>
+       <tr >
+        <td rowspan="3">Engineering</td>
+        <td>Alice</td>
+        <td>Software Engineer</td>
+        <td>Active</td>
+       </tr>
+
+       <tr>
+
+        <td>Bob</td>
+        <td>DevOps Engineer</td>
+        <td>Active</td>
+       </tr>
+
+      <tr>
+
+        <td>Charlie</td>
+        <td>QA Tester</td>
+        <td>On Leave</td>
+       </tr>
+
+      <tr>
+        <td rowspan="2">Marketing</td>
+        <td>Diana</td>
+        <td>Marketing Manager</td>
+        <td>Active</td>
+       </tr>
+
+      <tr>
+        <td>Eve</td>
+        <td>Content Creator</td>
+        <td>Active</td>
+       </tr>
+
+      <tr>
+        <td>HR</td>
+        <td>Frank</td>
+        <td>HR Specialist</td>
+        <td>Active</td>
+       </tr>
+    </table>
+
+
+    <h2>Table 3: Combined  Rowspan and Colspan Examples</h2>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <th colspan="4"> Academic Performance Report</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Student Name</th>
+            <th colspan="2">Semester 1</th>
+            <th rowspan="2">Overall Grade</th>
+        </tr>
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>A</td>
+            <td>B+</td>
+            <td>A-</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Bob</td>
+            <td>C</td>
+            <td>B</td>
+            <td rowspan="2">B-</td>
+        </tr>
+        <tr>
+            <td>Passed all subjects</td>
+        </tr>
+    </table>
+
+</body>
+</html>

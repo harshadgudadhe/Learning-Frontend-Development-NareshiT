@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Presentational & Formatting Tags</title>
+</head>
+<body>
+    <h1>Preformatted Text</h1>
+
+    <p>The pre tag preserves whitespace and line breaks exactly as they are written in the HTML source code, making it ideal for displaying code blocks or ASCII art.</p>
+    
+    <pre>
+    <code>
+       function example(data) 
+       {
+        if (data === null) 
+        {
+          return "No data";
+        }
+
+        return data.length;
+       }
+
+       This is a simple  
+       multi-line  
+       text block.
+    </code>
+    </pre>
+    <hr>
+    
+    <h1>Quotes and Blockquotes</h1>
+    <p>These tags are used for quoting text from other sources, distinguishing between short inline quotes and longer, block-level quotes.</p>
+    
+    
+    <h3>Short Quotes</h3>
+    <p>The q tag is used for short, inline quotations. My friend said, “I'll be there in five minutes!” before hanging up.</p>
+    <p>Another common phrase is, “Actions speak louder than words.”</p>
+
+    <h3>Block Quotes</h3>
+    <p>The blockquote tag is used for longer quotations that are typically displayed as a separate block of text. For example:</p>
+    <blockquote>
+        “Two roads diverged in a yellow wood, And sorry I could not travel both And be one traveler, long I stood And looked down one as far as I could To where it bent in the undergrowth.”
+        <p><cite>— Robert Frost, The Road Not Taken</cite></p>
+    </blockquote>
+    <p>This blockquote demonstrates how a large section of quoted text is rendered, typically with indentation, and can include a citation using the cite tag.</p> 
+    <hr>
+
+    <h2>Semantic Text Elements (Beyond Basic Styling)</h2>
+    <p>These tags add specific semantic meaning to text, which can be useful for accessibility, search engines, and more precise data representation.</p>
+
+    <h2>Abbreviation and Acronyms</h2>
+    <p>The abbr tag is the standard HTML way used to define both “abbreviations” and “acronyms.” It <sup>'</sup> s important for providing the full, expanded form of a shortened word or phrase, which helps with accessibility and search engine optimization.</p>
+    <p>You use the title attribute to provide the full description. When a user hovers over the abbreviated text, the full form usually appears as a tooltip.</p> 
+</body>
+</html>

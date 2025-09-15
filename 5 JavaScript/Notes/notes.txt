@@ -1,0 +1,392 @@
+------------------------------------------------------------------------------------------------------------------------------------
+                                                        Day 1
+Date: 09/09/25
+------------------------------------------------------------------------------------------------------------------------------------
+
+                                                JavaScript
+                                            ------------------
+JavaScript Use to make website functional/Interactive.
+Python : AI
+JavaScript : Web Devlopement  
+            --> React.js, TypeScript, Angular, Node.js, Next.js.
+Java : Enterprise Application 
+website:
+
+Syllabus:
+---------
+        1. Basic Javascript
+                |- Introduction
+                |- Data-types
+                |- operator
+                |- control-statements
+                |- loops
+                |- function
+                |- Arrays
+                |- Object
+
+        2. DOM (Data Object Module)
+                |- 
+                |-
+                |- 
+                |-
+                |- 
+                |-
+                |- 
+                |-
+        
+        3. Advace JavaScript
+                |- 
+                |-
+                |- 
+                |-
+
+
+1. Introduction:
+----------------
+                >JavaScript is a client-side programming language, 
+                >Used to build Interactive website using HTML, CSS.
+                >JavaScript controls the behaviour of web-pages. 
+                >and provide functionality to the web-pages.
+
+    Initially JS was created in 1995(4th dec 95) by Breden Eich while working at "Netscape(browser)" just in 10 days.
+    Initially it's named as "Mocha", later changed as "LiveScript".
+    but java was got famous becuase Java have feature "WORA" or "Plat-form Independece".
+    To use the popularity of Java, Livescript renamed as JavaScript.
+
+    Java = c  +  c++.
+    JavaScript = Python + Java.
+
+    JavaScript runs in the browsers  becuase every browser contains engine to run JavaScript called as "JS Engine."
+    Note: Different browsers have different Js Engine like: Google Chrome, Opera have "V8 JS Engine"
+          v8(Chrome), 
+
+    JavaScript Also runs on server-side which is "Node.js", 
+    so there will be quetion that 
+    => can we run javascript on server-side.
+    &
+    => can we run javascript without Browse.
+
+JavaScript is high-level, dynamic programming language that makes website alive.
+Think building website is like building house
+where :
+        HTML --> Used for structure of website or visual presentation like walls, windows, doors etc
+        CSS  --> used to paint or design the website or how it should looks like: painting,style, decoration etc.
+        JS   --> used to make website interactive or how should it works. like: Electricity etc.    
+
+
+=> How to include JS in HTML?
+
+we can include JS In html in two ways.
+They are :
+       => Internal Js
+       => External Js
+
+       => Internal Js: we can include JavaScript using <script> tag or element.
+          Example: 
+                   <script>
+                      // JS Code or logic
+                   </script>
+       => External Js: We can include external JavaScript file(.js file) to Use HTML using <script> tag with src="path" attribute.
+          Example: 
+                   <script src="filepath"> </script>
+
+=> Comments in Js: 
+            There are two types of comments in JS are 
+            1. Single-line :  //  -----
+
+            2. Multi-line :  /* ----- */
+    Notes: comments are used to make code readable for user/developer.
+
+
+=> Variables in Js: 
+        In js we can declare variable using keywords such as "var" , "let" and "const"
+        Variables/literals are used to store the values.
+        
+        Difference between Var, let and const:
+
+        1. Var : can be re-declare & re-initialise. var variables are function scoped. var is out-dated now it's not used in current scenarion.  
+                 example: var a=5; var a=10;
+        2. Let : can be re-initialise but can't re-declared. let variables are block scoped. 
+                 example: let a=5; a=10;
+        3. Const : Cant be re-declared or re-initialise.
+                 example: const a=5;    but can't re-initialise. const variables are block scoped. 
+
+Note: JavaScript is case-sensitive language.
+
+To accept input, we use one method called "prompt". but prompt accepts only strings. and this method provided by browser.
+example:
+--------
+        let a= +prompt("enter a value");
+        
+------------------------------------------------------------------------------------------------------------------------------------
+                                                        Day 2
+Date: 10/09/25
+------------------------------------------------------------------------------------------------------------------------------------
+
+Data-Types:
+-----------
+        JavaScript is Dynamic programming language.
+        It means in JS, There is no-fixed  data-type to a variable. 
+        The data-type of a variable is decided by value it is holding.
+        
+        There are two categories of data-types:
+        1. Primitive data-type
+        2. Non-Primitive data-type
+
+        1. Primitive data-type: 
+                These datatypes holds the value and compares only value. These datatypes are immutable.
+                There are 5 basic Primitive datatypessuch as:
+                -> Number
+                -> String
+                -> Boolean
+                -> Undefined
+                -> Null
+
+        2. Non-Primitive data-type: 
+                These datatypes holds the value and compares the address/reference. These datatypes are Mutable.
+                There are basic Primitive datatypessuch as:
+                -> Functions
+                -> Arrays
+                -> Objects 
+Can we change one datatype into another datatype?
+yes, The process of changing one datatype to another datatype is called "Type-casting",
+There are two types of type-casting: 
+
+1. Implicit type-casting
+2. Explicit type-casting
+
+1. Implicit type-casting: 
+            It's the default or automatic conversion of datatype based on operation.
+            Example: 
+                     5 + "4" ==> "105"
+                     2 + true ==> 3
+                     5 - "4"  ==> 1
+                     5 - true ==> 4
+                     5 * "4"  ==> 20
+
+
+1. Explicit type-casting: 
+            It's the forced way of converting one data-type to another.
+            Example:
+                    5 + +"4" ==> 9
+                    5 + Number('4') ==> 9
+
+1. number: Any numerical value is a number.
+        Every number can have some default methods such as 
+        toString, toPrecision etc..,
+        numbers also have math methods such as 
+        sqrt, cbrt, pow, ceil, floor, toFixed  etc..,
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+                                                        Day 3
+Date: 11/09/25
+------------------------------------------------------------------------------------------------------------------------------------
+
+toFixed(): used to return, round-up value of N-decimal digits.
+toPrecision(): used to return round-up value of N-total digits
+toString(): used to convert number to a string and different base-system.
+example:
+        let x=25.4164
+        x.toFixed(2)     ==> 25.41
+        x.toPrecision(3) ==> 25.4
+        x=25;
+        x.toString(2)    ==> 11001           //binary
+
+Most used math-methods are: 
+
+Math.sqrt(16): returns square-root of 16 ==> 4
+Math.cbrt(27): returns cube-root of 27 ==> 3
+Math.pow(2,3): returns power of 3 ==> 8                   //note: we can write same thing like 2**3 for power in JS only.
+Math.abs(-5): returns absolute value, always positive ==> 5
+Math.max(1,2,3,4,5): returns maximum value ==> 5
+Math.min(1,2,3,4,5): returns minimum value ==> 1
+Math.ceil(2.1): returns nearest greater value ==> 3
+Math.floor(2.1): returns nearest smaller value ==> 2
+Math.round(1.4): returns nearest integer ==> 1
+Math.random(): returns random value in between 0 & 1  ==>  (un-predictable) 
+
+
+
+
+2. String: String is collection of characters.
+eg:  "abc124", "abc 124"
+
+In javascript string can base
+
+String can also dynamic called "template literals". It uses backticks for string and ${} for dynamic value 
+let x="john"
+console.log(``);
+
+String methods:
+        1. toUpperCase(): used to convert string into upper-case.
+        2. toLowerCase(): used to convert string into lower-case.
+        Note: Original String will never change since sttrings are immutable.
+        3. length: used to return the number of characters in string.
+        4. charAt(iN): used to return character that present on number of index which is provided in method parameter.
+        5. indexOf('ch'): used to return
+        6. lastIndexOf('c'):
+        7. startsWith('str'):
+        8. endsWith('str'):
+        9. slice(s,e): used to return substring from index s to index e-1.
+        10.slice(s): used to return substring from index s to end.
+        11.split(v): used to split the string based on value v and return an array of substring.
+        eg: "prasad".split('a') ==> ['pr', 's', 'd']
+        12.replace(old,new): used to replace first occurance of old value to new value. for all occurances, we can use replaceAll.
+        13.trim(): used to return string after removing the spaces from starting and ending of string.
+
+
+
+3. Boolean: Used to store true/false. If converted to number, true is converted as 1 and false is converted as.
+
+4. undefined: Primitive datatype/value taht represents un-initialised or non-existent element.
+eg: 
+    let y;
+    console.log(z)             // undefined
+
+    undefined expects future occupance of value.
+
+5. null: also the primitive value that indicates a variable has no value or no object.
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+                                                        Day 4
+Date: 12/09/25
+------------------------------------------------------------------------------------------------------------------------------------
+
+Operators: Used to perform the operations. 
+        There are different types of operators such as: 
+
+1. Arithmetic operator: 
+         +,  -  ,  *  ,  / (direct division) ,   % (remainder)  , **(power)
+
+2. Relational Operators: used for comparison.
+   >  :
+   
+   <  :
+   
+   >= :
+   
+   <= :
+
+   == : will compare only values not data-types.
+
+   === : will compare both values & data-types.
+
+   != :  returns negation of "=="
+
+   !== : returns negation of "==="
+
+3. Logical Operators: These operators are used to combining thwe statements logically like:
+   
+   &&  (Logical AND) : return "true" only if both are true. 
+   ||  (Logical OR)  : return "true" if any-one is true.
+   !   (Logical NOT) : return "true" if its actually false.(opposite output)
+
+4. increment and decrement: Unary operator which is used to increase and decrease value by 1.
+
+   pre-increment/decrement: first update the value then returns it.
+   post-increment/decrement: first returns the value then updates it.  
+   b=10; ++b; ==> b=11;
+   b=10; b++; ==> b=10;
+
+5. Ternary Operator:  its conditonal operator, which is short-hand operator used to check the condition "true" or "false" and make a decison based on that value.
+   let a=10;
+   let c=(a>5) ? 20 : 30;
+
+
+6. nullish coalescing Operator: checks 2 values and         
+        returns 1st value if its not undefined or null, 
+        else returns 2nd value.
+        eg:
+            let a=10,b=20;
+            let c = a ?? b ;            //10
+        eg: 
+            let a1=undefined , b1=20;
+            let c1 = a1 ?? b1 ;         //20
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+                                                        Day 5
+Date: 15/09/25
+------------------------------------------------------------------------------------------------------------------------------------
+
+**Control statements: 
+
+1. Decision-Making statements:  
+2. Loops
+
+1. Decision Making statements:
+-------------------------------      
+        Are also called control Statements which are used to control the flow of code based on a condition/decision.
+        Most used  decision Making Statements are 
+
+        *if: 
+                    i.   simple-if:
+                                    if(cond)
+                                    {
+                                        //Statements
+                                    }
+                                
+
+                   ii.  if-else: 
+                                   if(cond){
+                                         //Statements
+                                   }
+                                   else
+                                   {
+                                       //Statements 
+                                   }
+                                
+
+                  iii. if --> else-if --> else   or else-if:
+                                   if(cond)
+                                   {
+                                        //Statements
+                                   }else if(cond)
+                                   {
+                                        //Statements
+                                   }
+                                   else
+                                   {
+                                        //Statements
+                                   }
+
+                   iv.  Nested if:
+                                 if(cond)
+                                 {
+                                        //Statements
+                                 }else{
+                                        if(cond)
+                                        {
+
+                                        }else{
+
+                                        }
+                                 }
+                   
+------------------------
+
+        *switch:     
+                switch works with multiple conditions using cases. It's an alternative approach on 
+                if-else-if. 
+                But Each case should be terminated by using keyword "break" else it falls to the next case and always needs a case for "default" entry
+
+                Syntax:
+                         switch(cond)
+                         {
+                                case value1:   //Statements;  Break;
+                                case value2:   //Statements;  Break;
+                                case value3:   //Statements;  Break;
+                                case value4:   //Statements;  Break;
+                         }
+           
+
+
+
+--------------------------------------------
+Nano Banana (hugging face)
+How the recommandation system works ?
+Payment Gateways
+Aauth-gaurd
+portfolioLink: <!-- sonuansari1998.github.io/my_portfolio.netlify -->

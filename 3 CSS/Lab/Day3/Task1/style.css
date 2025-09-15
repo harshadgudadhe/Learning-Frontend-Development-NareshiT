@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.parent{
+    height: 200px;
+    width: 100%;
+    border: 1px solid black ;
+    margin: 10px;
+}
+
+
+.div{
+    border: 1px black;
+    height: 70px;
+    width: 100px;
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+#div1{
+    background-color: rgb(19, 99, 173);
+    border-radius: 7px;
+    position: static;
+}
+
+
+
+
+#div2{
+    background-color: rgb(28, 120, 54);
+    border-radius: 7px;
+    position: relative;
+}
+
+
+
+
+#div31{
+    background-color: rgb(230, 109, 17);
+    border-radius: 7px;
+    position: absolute;
+    right: 0%;
+    
+}
+#div32{
+    background-color: rgb(65, 9, 121);
+    border-radius: 7px;
+    position: fixed;
+    right: 0%;
+}
+
+#div4
+
+
+#div5{
+    background-color: rgb(28, 120, 54);
+    border-radius: 7px;
+    position: sticky;
+}

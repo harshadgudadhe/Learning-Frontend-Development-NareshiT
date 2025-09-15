@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#div1
+{
+   border: 3px solid blue; 
+}
+
+#div2
+{
+    border: 3px dashed red;
+}
+
+#div3
+{
+    border: 3px dotted green;
+}
+
+#div4
+{
+    border: 3px solid orange
+}
+
+#div5
+{
+    border: 3px solid purple;
+}
+
+
+
+.p1
+{
+    margin: 30px 10px 0px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+   
+}
+
+.p2
+{
+   margin: 0px 10px 0px 10px; 
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: blue;
+}
+
+
+.p3
+{
+   margin: 0px 10px 0px 10px;  
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   color: green;
+}
+
+
+.p4
+{
+    margin: 0px 10px 0px 10px; 
+    font-family: 'Courier New', Courier, monospace;
+    color: orange; 
+}
+
+
+.p5
+{
+    margin: 0px 10px 0px 10px; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple; 
+}

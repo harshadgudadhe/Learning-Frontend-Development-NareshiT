@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables with cellspacing & cellpadding</title>
+</head>
+<body>
+    <h1>Demonstrationof Table cellspacing & cellpadding</h1>
+    <h2>Table 1: Default spacing(no Attribute)</h2>
+    <p>This table uses Default browser spacing for cells.</p>
+    <table border="1">
+        <tr>
+            <th>Header A</th>
+            <th>Header B</th>
+        </tr>
+        <tr>
+            <td>Data 1.1</td>
+            <td>Data 1.2</td>
+        </tr>
+        <tr>
+            <td>Data 2.1</td>
+            <td>Data 2.2</td>
+        </tr>
+    </table>
+
+    <h2>Table 2: cellspacing</h2>
+    <p>This table has cellspacing of 10px, increasing the space between cells.</p>
+    <table border="1" cellspacing="10px">
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td>Apples</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Orange</td>
+            <td>75</td>
+        </tr>
+    </table>
+
+    <h2>Table 3: cellpadding</h2>
+    <p>This table has cellpadding of 15px, increasing the space between cell content and its borders.</p>
+    <table border="1" cellpadding="15px">
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>$1200</td>
+        </tr>
+        <tr>
+            <td>Mouse</td>
+            <td>$25</td>
+        </tr>
+    </table>
+
+    <h2>Table 4: cellspacing, cellpadding</h2>
+    <p>This table combines both cellspacing and cellpadding Attribute.</p>
+    <table border="1" cellspacing="10" cellpadding="15">
+        <tr>
+            <th>Day</th>
+            <th>Task</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Code Review</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Meeting Prep</td>
+        </tr>
+    </table>
+</body>
+</html>

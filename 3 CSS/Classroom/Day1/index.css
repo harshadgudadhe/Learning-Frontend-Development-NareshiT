@@ -1,0 +1,24 @@
+h1
+{
+  color: brown !important; /* To make it fixed*/
+  background-color: black;
+}
+
+body
+{
+    color: bisque;
+}
+
+.parents 
+{
+   color:chartreuse; 
+}
+
+#sib
+{
+    color: coral;
+}
+
+*{
+    text-align: center;
+}

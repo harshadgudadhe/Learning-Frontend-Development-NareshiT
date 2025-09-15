@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    text-align: center;
+    padding-top: 100px;
+    background-color:black;
+}
+
+.image{
+    height: 200px;
+    width: 200px;
+    border: 5px solid green;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+h1{
+    color: transparent;
+    background-image: linear-gradient(to bottom, orange,white,green);
+    background-clip: text;
+    font-size: 48px;
+    margin-top: 10px;
+}
+
+p{
+    font-size: 24px;
+    color: rgb(149, 167, 138);
+    margin: 20px 150px;
+    text-align: justify;
+}
+
+button{
+    background-image: linear-gradient(orange,green);
+    color: white;
+    margin-top: 75px;
+    padding: 10px 20px;
+    border-radius:  0px 30px 0px 30px;
+}
