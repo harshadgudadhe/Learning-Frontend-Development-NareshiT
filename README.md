@@ -73,13 +73,15 @@ Frontend: HTML, CSS, Bootstrap, JavaScript
 Tools: Git, GitHub, VS Code
 
 🤝 Contribution
+
 This repository is mainly for learning purposes, but suggestions and improvements are always welcome!
 Feel free to fork and raise pull requests.
 
-📧 Contact
-Author: Harshad Gudadhe
-GitHub: @harshadgudadhe
-LinkedIn: harshad-gudadhe
+📧 Contact  
+
+Author: Harshad Gudadhe  
+GitHub: @harshadgudadhe  
+LinkedIn: harshad-gudadhe  
 Email: harshadgudadhe786@gmail.com
 
 --------
