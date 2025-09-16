@@ -390,3 +390,116 @@ How the recommandation system works ?
 Payment Gateways
 Aauth-gaurd
 portfolioLink: <!-- sonuansari1998.github.io/my_portfolio.netlify -->
+
+------------------------------------------------------------------------------------------------------------------------------------
+                                                        Day 6
+Date: 16/09/25
+------------------------------------------------------------------------------------------------------------------------------------
+
+Loops:
+------
+      Used to iterate certain statements again and again untill the condition fails.
+
+Types of loop:
+--------------
+
+two types of loops:
+
+1. Entry control
+ 
+
+1. Entry control: use to check the condition at the starting of the loop and run statements if condition is true, once the statements are over, it will again check the condition and repeat the process untill the condition false.
+
+                1. while : 
+                        Is an entry-control loop which used condition, updation and initialization in 3 different statements: 
+                        syntax: initialization;
+                                while(condition)
+                                {
+                                        statements;
+                                        updation;
+                                }
+
+                        Example: print number 1 - 10 using while.
+                                let i=1;
+                                while(i<=10)              //condn
+                                {
+                                        console.log(i);    //statement
+                                        i++;               //updation
+                                }
+               
+               3. for : 
+                        Is an entry-control loop used to iterate certain statements by using initialization, condition and updation in the same line .
+                        syntax: 
+                               for(initialization;condition;updation)
+                               {
+                                //statements
+                               }
+                        
+                        Example1: print alternate letters of given string(input: PRASAD , output:)
+                               
+                               let x="PRASAD"
+                               for(i=0; i<=x.length-1; i+=2)
+                               {
+                                console.log(charAt(i));
+                               }
+
+                        Example2:
+                               let arr = [5,4,3,2,1];
+                               for(i=0; i<=x.length-1; i++)
+                               {
+                                console.log(arr[i]);
+                               }                               
+                Note: This is called standard-for
+                      but in javascript there are other variations for such as 
+
+
+        i. for in: used to iterate array indexes/address.
+               syntax:  
+                      for(let i in arrayName)
+                      {
+                        //Statements
+                      }
+                here, i will be automatically array indexes.
+                Example:
+                       let arr=[5,4,3,2,1]
+                       for(let i in arr)
+                       {
+                        console.log(i);
+                       }                     
+
+
+        ii for of:  used to iterate array elements
+               syntax:  
+                      for(let i of arrayName)
+                      {
+                        //Statements
+                      }
+                here, i will be automatically array elements.
+                Example:
+                       let arr=[5,4,3,2,1]
+                       for(let i of arr)
+                       {
+                        console.log(i);
+                       } 
+
+
+Tasks:
+     Level 0:
+        1. print even numbers from 1-20
+        2. print 3 table in console.
+     Level 1:
+        1. check a number is palindrome or not ?
+        2. check a string is palindrome
+     Level 3: 
+        1. P
+           P R 
+           P R A
+           P R A S
+           P R A S A
+           P R A S A D
+----------------------------------------------
+
+2. Exit control:                
+    
+
+                2. do-while
