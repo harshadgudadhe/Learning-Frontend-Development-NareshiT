@@ -46,8 +46,10 @@ The repository is organized into the following modules:
 
 ## 🎯 Purpose
 
+
 This repository serves as a **learning log and practice hub** for mastering frontend development skills.  
 It can be helpful for **beginners**, **students**, and anyone revising **HTML, CSS, Bootstrap, and JavaScript**.
+
 --------
 
 ## ⚡ How to Use
@@ -79,6 +81,7 @@ Author: Harshad Gudadhe
 GitHub: @harshadgudadhe
 LinkedIn: harshad-gudadhe
 Email: harshadgudadhe786@gmail.com
+
 --------
 
 ⭐ Don’t forget to star this repository if you found it useful!
