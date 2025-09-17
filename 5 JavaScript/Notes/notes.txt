@@ -406,7 +406,7 @@ Types of loop:
 two types of loops:
 
 1. Entry control
- 
+2. Exit control  
 
 1. Entry control: use to check the condition at the starting of the loop and run statements if condition is true, once the statements are over, it will again check the condition and repeat the process untill the condition false.
 
@@ -489,7 +489,27 @@ Tasks:
         2. print 3 table in console.
      Level 1:
         1. check a number is palindrome or not ?
+          
         2. check a string is palindrome
+           const s = prompt("eneter a string");
+let str = s.toLowerCase();
+let revstr='';
+
+for(let i=str.length-1; i>=0; i--)
+{
+    revstr=revstr+str.charAt(i);
+}
+
+if(str==revstr)
+{
+    console.log(`${str} is palindrome`);
+}else{
+    {
+    console.log(`${str} isn't palindrome`);
+}
+}
+
+
      Level 3: 
         1. P
            P R 
@@ -499,7 +519,50 @@ Tasks:
            P R A S A D
 ----------------------------------------------
 
+------------------------------------------------------------------------------------------------------------------------------------
+                                                        Day 7
+Date: 17/09/25
+------------------------------------------------------------------------------------------------------------------------------------
+
+
+Brain-stroming Question:
+------------------------
+
+//swapping without third-var
+let a=10, b=20;
+console.log("a= "+a ,"b= "+b);
+a=a+b;
+b=a-b;
+a=a-b;
+console.log("a= "+a ,"b= "+b);
+
+//swapping without third-var & (arithmetic operator) 
+let x=10, y=20;
+console.log("x= "+x ,"y= "+y);
+x=x*y;
+y=x/y;
+x=x/y;
+console.log("x= "+x ,"y= "+y);
+
+
 2. Exit control:                
     
 
-                2. do-while
+                2. do-while: do-while is exit control loop which checks the condition at the exit of body. If the condition is true, it repeat the loop else it terminates. 
+                   syntax:
+                          //initialization 
+                          do{
+                                //statements
+                                //updation
+                          }while(condn)
+
+                   example: print numbers in between 1 to 20 using do while
+
+                   let i=1;
+                   do{
+                        console.log(i);
+                        i++;
+                   }while(i<=20);
+------------------------------------------------
+
+// To practice javascript:  visit "freecodecamp" website 
