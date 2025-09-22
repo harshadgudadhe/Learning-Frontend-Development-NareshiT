@@ -7,3 +7,15 @@
 
 
 //--------------------------------------------------------------------------------------------
+
+//callback function:
+
+function mad(){
+    console.log("I'm mad");
+}
+
+function mainFun(x)
+{
+    x();
+}
+mainFun(mad);
