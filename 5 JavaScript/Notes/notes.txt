@@ -571,12 +571,6 @@ console.log("x= "+x ,"y= "+y);
 Date: 18/09/25
 ------------------------------------------------------------------------------------------------------------------------------------
 
-Brain-stroming Question:
-------------------------
-
-
-
-
 functions:
 ----------
            function is a block of code which can be reausable. Instead of implementing  whole code, we can divide the code into logical parts called functions.
@@ -830,5 +824,143 @@ Date: 21/09/25
 
 ------------------------------------------------------------------------------------------------------------------------------------
                                                         Day 12(.....)
-Date: 22/09/25
+Date: 23/09/25
 ------------------------------------------------------------------------------------------------------------------------------------
+
+//Use forEach and print each elements cube in given array.
+
+let arr= [5,4,9,8];
+arr.forEach(function(ele,ind)
+{
+    console.log(ele*ele*ele);
+            //or
+    console.log(ele**3);
+})
+
+
+9. Map(callBackFunction(ele,ind)):
+-------------------------------- 
+          Map is used to pass a callbackfunction to each and every elements of the array and return a value for each and Every element of the array.
+eg.
+let values2 = arr.map((ele,ind) => 
+{
+   return ele%2 == 0;
+})
+console.log(values2);                      //output: 
+
+10. Filter:
+---------  
+          similar to map but it returns only the elements whose condition is true.
+eg:
+let arr=[5,4,6,3];
+let x = arr.filter((e,i)=>   e>=5 );
+console.log(x);                          //output: [5,6]
+
+11. indexOf('ele'): used to return the first 
+
+eg.
+let arr= [5,4,6,3]
+let arr1 = [5,4,3,4];
+console.log(arr.indexOf(4));                //output: 
+console.log(arr1.indexOf(4));               //output:
+
+12. find(callbackfunction(ele,ind)):  works similarly  as filter but returns only first element that satisfies the condition   
+------------------------------------  we can use alternative findIndex, findLast, findLastIndex.
+
+
+eg. 
+let x = arr.find((element,index) => 
+{
+        return ele%2==0;
+})
+console.log();                          //output:
+
+
+ findIndex(): 
+---------------
+
+eg. 
+let x = arr.findIndex((element,index) => 
+{
+        return ele%2==0;
+})
+console.log();                          //output:   
+
+
+
+13. reverse(): used to reverse the given array.
+eg. 
+
+
+
+14. reduce(callbackfunction(prev,curr), initial_Value): It is used to find cumultive values given in array.
+eg.
+
+------------------------------------------------------------------------------------------------------------------------------------
+                                                        Day 13(DOM)
+Date: 24/09/25
+------------------------------------------------------------------------------------------------------------------------------------
+
+**Object: Object is a collection of key-value pairs, where each key is indexed to specific value. Objects are represented by {}(curly braces).
+---------
+eg. 
+        let obj =
+        {
+           name : "Harsh",
+           age : 24;
+        } 
+=> To Acess:        
+        console.log(obj, obj.name, obj.age);                           //using->    "." (dot method )
+        console.log(obj, obj["name"], obj["age"]);                     //Using->     ["key"] (index signature)  
+=> To Adding: 
+        obj.email = "harsh@596@gmail.com"
+
+=> Another way To Create Object: 
+        let  x = Object.create ({name: "abc", age:21 })               //It will created but stored in prototype
+
+=> We can Freeze(obj): 
+       now we will not able to modify to obj.
+       eg. 
+           Object.freeze(objName)
+=> We can seal the obj: 
+       here we can modify(change) the obj property, but we can't add or remove any property of object.
+       eg. Object.seal(objName)
+            
+=> Interview que:
+       Difference in between Freeze() and Seal
+         
+-----------------------------------------------------------------------------------------------------------------------
+                                                DOM
+                                        (Document Object Model)
+                                        ------------------------
+
+=> Document is an object that contains complete structure of web-page in Tree like format.
+   It allows to manipulate or interact with doscuments, elements, attributes or context.
+
+Document Tree: 
+-------------
+                                    Windows
+                                       |
+                                    Document
+                                       |
+                                      HTML
+                                       /\
+                                      /  \
+                                     /    \
+                                    /      \  
+                                Head        Body
+                                  /\         /\
+                                 /  \       /  \
+                               meta title  h1   h2
+
+DOM Selection: 
+        We can selecte any element of document object, using following methods:
+        1. getElementsByTagName('tagName'): used to selecte elements with a specific tagName and it returns an array of elements.
+           eg.
+              
+        2. getElementsByClassName('className'): used to selecte elements with a specific className and it returns an array of elements.
+           eg.
+
+
+        3. getElementsByIdName('idName'): used to select single element with a specific idName and it returns particular element.
+           eg.
