@@ -25,20 +25,19 @@ Syllabus:
                 |- Object
 
         2. DOM (Data Object Module)
-                |- 
-                |-
-                |- 
-                |-
-                |- 
-                |-
-                |- 
-                |-
+                |- DOM Introduction, Selection
+                |- DOM Manipulation
+                |- DOM Creation, Deletion
+                |- Events
+                |- Form Validations
+                |- Rest bs spread, this Keywords
+                |- ES6 features
+                |- OOP's
         
         3. Advace JavaScript
+                |- call back hell, promises, fetch, API, Asynch await
+                |- libraries(jQuery,axios)
                 |- 
-                |-
-                |- 
-                |-
 
 
 1. Introduction:
@@ -832,7 +831,7 @@ Date: 23/09/25
 //Use forEach and print each elements cube in given array.
 
 let arr= [5,4,9,8];
-arr.forEach(function(ele,ind)
+arr.forEach(function(ele,indx)
 {
     console.log(ele*ele*ele);
             //or
@@ -840,9 +839,9 @@ arr.forEach(function(ele,ind)
 })
 
 
-9. Map(callBackFunction(ele,ind)):
+9. Map(callBackFunction(ele,indx)):
 -------------------------------- 
-          Map is used to pass a callbackfunction to each and every elements of the array and return a value for each and Every element of the array.
+        Map is used to pass a callbackfunction to each and every elements of the array and return a value for each and Every element of the array.
 eg.
 let values2 = arr.map((ele,ind) => 
 {
@@ -852,14 +851,15 @@ console.log(values2);                      //output:
 
 10. Filter:
 ---------  
-          similar to map but it returns only the elements whose condition is true.
+        similar to map but it returns only the elements whose condition is true.
 eg:
 let arr=[5,4,6,3];
 let x = arr.filter((e,i)=>   e>=5 );
 console.log(x);                          //output: [5,6]
 
-11. indexOf('ele'): used to return the first 
 
+11. indexOf('ele'): used to return the first 
+------------------
 eg.
 let arr= [5,4,6,3]
 let arr1 = [5,4,3,4];
@@ -956,6 +956,7 @@ Document Tree:
                                meta title  h1   h2
 
 DOM Selection: 
+--------------
         We can selecte any element of document object, using following methods:
         1. getElementsByTagName('tagName'): used to selecte elements with a specific tagName and it returns an array of elements.
            eg.
@@ -965,3 +966,109 @@ DOM Selection:
 
         3. getElementsByIdName('idName'): used to select single element with a specific idName and it returns particular element.
            eg.
+
+------------------------------------------------------------------------------------------------------------------------------------
+                                                        Day 14(DOM Manipulation)
+Date: 25/09/25
+------------------------------------------------------------------------------------------------------------------------------------
+
+        4. querySelector('css selector'): used to select first element that matches the specified css selector.
+           Example:
+                   let y = document.querySelector('.empty'); 
+                   console.log(y);
+                   y.textContent = "Harsh";
+        5. querySelectorAll: used to select all elements that matches the specified css selector.
+           Example: 
+                   let z = document.querySelectorAll('.empty'); 
+                   console.log(z);
+                   z.textContent = "Hello Harsh";
+
+
+*Events*:
+---------
+        Events are action that occur when a user interacts with the web-page such as: clicking a button, submitting a form, scrolling a page, hovering over an ele etc..
+        Those events can be handled using event handlers such as: "onClick()".  
+        Example: //Small Project 1: "Counter Project"
+            
+            <div class="" id="counter">
+                <h1 class="" id="count">0</h1>
+                <button id="btn1" onclick="incr()">Increment</button>
+                <button id="btn2" onclick="decr()">Decrement</button>
+                <button id="btn3" onclick="reset()">Reset</button>
+            </div>
+
+let c=0;
+function incr()
+{
+    if(c<20)
+    {
+       c++;     
+    }else{
+        alert("Number Can't be increase after 20");
+    }
+    document.getElementById('count').textContent = c;
+}
+
+function decr()
+{
+    if(c>0)
+    {
+       c--;
+    }else{
+        alert("Number Can't be decrease after 0");
+    }
+    document.getElementById('count').textContent = c;
+}
+
+function reset()
+{
+    c=0;
+    document.getElementById('count').textContent = c;
+}
+//----------------------------------------------------------------------------------------------
+
+
+*DOM Manipulate*:
+-----------------
+        we can manipulate an element using below properties:
+        1. textContent: used to read or change the text inside an element
+        example:
+               const h = document.getElementById('heading');
+               function fun()
+               {
+                alert(h.textContent = "HII");
+               }
+
+        2. innerText: used to read or change the inside an element but its  also loads CSS so, incase of visiblity hidden in css, It can't overpass it.
+        Example:
+                
+
+        3. innerHTML: used to read or change HTML inside an element.
+        Example: 
+
+
+        4. style: used to read or change the styles of an element.
+        Example:
+
+
+        5. value: used to read/select or change the value of input.
+        Example:
+                
+------------------------------------------------------------------------------------------------------------------------------------
+                                                        Day 15(DOM Manipulation...)
+Date: 26/09/25
+------------------------------------------------------------------------------------------------------------------------------------
+
+        6. clasaList: used to add/remove/toggle the class names to elements.
+
+
+*DOM Creation*:
+---------------
+        We can even create  elements using document object with methods such as:
+        1. createElement('elementName'): it will create element.
+        2. appendChild(childElement): it will add element to HTML.
+        3. append(childElements): it will add multiple elements to HTML.
+        4. 
+
+
+//Task-1 Create Simple Movie Card 
