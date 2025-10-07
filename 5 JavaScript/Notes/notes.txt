@@ -1072,3 +1072,40 @@ Date: 26/09/25
 
 
 //Task-1 Create Simple Movie Card 
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+                                                        Day 16 (Events)
+Date: 07/10/25
+------------------------------------------------------------------------------------------------------------------------------------
+
+Events:
+-------  
+        Events are used to trigger based on users actions, they trigger functions to perform certain Task
+        Based on user's action events are divided  as several types, such as:
+        1. mouse events: used when user did an action using mouse.
+           example: click, mouse over, mouse out etc. 
+        2. keyboard events: used when user did an action using keyboard.
+           example: keyUp, keyDown, keyPress etc.
+           document.addEventListener('keydown',function(){
+                console.log("hii");
+           })
+
+           =>addEventListener:
+           everytime an event got triggered it passes an object to callback function called eventobject. It contains complete event details.
+           write a js code to make a paragraph becomes red color when letter 'r' is pressed 
+           eg.
+           document.addEventListener("keydown", function (e) 
+           if(e.key=='r')
+          {
+           document.getElementById('key').style.color="red";
+           });
+
+        3. Form Events : used to get the details of inputs or form related from user
+                         there are different types of form events like: 
+                        -> submit: used to submit the entire form.
+                        -> reset: used whenever form details got reset.
+                        -> change: used when form input values got changed.
+                        -> input:  used when input values got entered.
+                        -> select: used when an input value is selected.
+                        -> focus: used  when input value got focused.

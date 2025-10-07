@@ -1,0 +1,22 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+  </head>
+  <body style="display: flex; flex-direction: column; align-items: center; gap:5px;">
+    <h2 id="key">Sign-up</h2>
+    <form id="form" style="height: 300px; width: 400px; border: 2px solid black; display: flex; flex-direction: column; justify-content: space-around; background-color: rgb(15, 82, 104); padding-top: 10px;">
+        <div style="margin-left: 50px;"><label for="name" style="margin-right: 10px;">Name:</label><input type="text" name="name" id="name" placeholder="Enter Your Name" onclick="fun4()"><p id="name-error"></p></div>
+        
+        <div style="margin-left: 50px;"><label for="email" style="margin-right: 10px;">Email:</label><input type="email" name="" id="email" placeholder="Enter Your Email" onclick="fun5()"><p id="email-error"></p></div>
+        
+        <div style="margin-left: 50px;"><label for="pass" style="margin-right: 2px;">Password:</label><input type="password" name="" id="pass" placeholder="Enter Your Password" onclick="fun6()"><input type="button" value="view" onclick="fun7()"><p id="pass-error"></p></div>
+        
+        <div style="display: flex;  justify-content: center;"><button type="submit"  style="width: 20%; height: 100%; background-color: green; color: aliceblue; border-radius: 10%; " onclick="fun3()" >Submit</button></div>
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>

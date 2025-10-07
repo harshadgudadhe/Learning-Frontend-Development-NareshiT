@@ -1,0 +1,26 @@
+<!--  -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+  </head>
+  <body style="display: flex; flex-direction: column; align-items: center; gap:5px;">
+    <!-- Event Listener -->
+    <h2 id="key">Sign-up</h2>
+
+    <!-- Form -->
+    <form id="form" style="height: 200px; width: 400px; border: 2px solid black; display: flex; align-items: center; justify-content: center; flex-direction: column; justify-content: space-around; background-color: rgb(15, 82, 104); padding-top: 10px;">
+        <div><label for="name">Name:</label><input type="text" name="name" id="name" placeholder="Enter Your Name" onclick="fun4()"></div>
+        <p id="name-error"></p>
+        <div><label for="name">Email:</label><input type="email" name="" id="email" placeholder="Enter Your Email" onclick="fun5()"></div>
+        <p id="email-error"></p>
+        <div><label for="name">Password:</label><input type="password" name="" id="pass" placeholder="Enter Your Password" onclick="fun6()"><input type="button" value="view" onclick="fun7()"></div>
+        <p id="pass-error"></p>
+        <button type="submit" id="submit" style="width: 20%; height: 10%; background-color: green; color: aliceblue; border-radius: 10%;" onclick="fun3()" >Submit</button>
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>
