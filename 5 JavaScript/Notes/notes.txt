@@ -1075,7 +1075,7 @@ Date: 26/09/25
 
 
 ------------------------------------------------------------------------------------------------------------------------------------
-                                                        Day 16 (Events)
+                                                        Day 17 (Events)
 Date: 07/10/25
 ------------------------------------------------------------------------------------------------------------------------------------
 
@@ -1109,3 +1109,45 @@ Events:
                         -> input:  used when input values got entered.
                         -> select: used when an input value is selected.
                         -> focus: used  when input value got focused.
+
+------------------------------------------------------------------------------------------------------------------------------------
+                                        Day 18 (Form Validation and regex)
+Date: 08/10/25
+------------------------------------------------------------------------------------------------------------------------------------
+                                        //regularExpression used for Patterns
+                                -------------------------------------------------------
+//[a-z] -- for small letters
+// [A-Z] -- for capital letters
+// [0-9] -- for numbers
+// [@#$%^&*] -- for special characters  
+// ^[a-z]$ -- for starts and ends with small letters
+// ^[A-Z]$ -- for starts and ends with capital letters
+// ^[0-9]$ -- for starts and ends with numbers
+// ^[A-Z]$ -- for starts and ends with capital letters
+// [a-z]{2} -- for exactly two small letters
+// [a-z]{2,5} -- for between two and five small letters
+// [a-zA-Z]{2,5} -- for between two and five letters (small or capital)
+// [0-9]{10} -- for exactly ten numbers
+// [6789]{1}[0-9]{9} -- for a valid Indian mobile number 
+
+// ^(for start),
+// $(for end), 
+// *(for repeatition of previous character), 
+// @(for specific character like @ in email id), 
+// +(for one or more times of previous character or group of characters),  
+// .(for any character except new line character \n or \r etc), 
+
+//Password Validation: 
+//(?=.*[a-z]) (?=.*[A-Z])(?=.*[0-9]) (?=.*[@-.])
+    //(?=.*[a-z]) -- at least one lowercase letter
+    //(?=.*[A-Z]) -- at least one uppercase letter
+    //(?=.*[0-9]) -- at least one number
+    //(?=.*[@-.]) -- at least one special character
+
+//Email Validation:   
+//[A-Za-z0-9]{2,}+@[A-Za-z]{2,}+\.[A-Za-z]{2,}
+    //[A-Za-z0-9]{2,} -- at least two characters (letters or digits) before the "@" symbol
+    //@ -- the "@" symbol
+    //[A-Za-z]{2,} -- at least two letters for the domain name after the "@" symbol
+    //\. -- a literal dot (.) before the top-level domain
+    //[A-Za-z]{2,} -- at least two letters for the top-level domain (e.g., com, org, net)
