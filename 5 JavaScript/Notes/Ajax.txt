@@ -2,13 +2,15 @@
 //AJAX(Asynchronous JavaScript and XML) 
 
 
-AJAX:
------ 
-    JavaScript is normally synchronous and single-threaded language. synchronous executes code one after other and single threaded means execute only one code at a time.
-    Example(synchronous):
-        console.log("Hii");
-        console.log("bye");
-        Here,
+Asynchronous:
+------------- 
+    Synchronous:
+            JavaScript is normally synchronous and single-threaded language. 
+            synchronous executes code one after other and single threaded means execute only one code at a time.
+        Example(synchronous):
+            console.log("Hii");
+            console.log("bye");
+            Here,
             first method will execute first then after only the next method will execute.
 
     Asynchronous:
@@ -37,5 +39,45 @@ AJAX:
         We can stop these methods using clearTimeOut & clearInterval methods.
         eg.
            
+    Prerequisites to understand AJAX: 
+        1. good understanding of callbacks 
+        2. good understanding of event loop
 
+//----------------------------------------------------------------------------------------------------------------------------------------
+Day20
+Date: 10/10/25
+//----------------------------------------------------------------------------------------------------------------------------------------
 
+                                        /* callback hell , promises */
+
+Callback-hell: 
+            callbacks creates a problem called "callback hell" or "pyramid of doom", which is nothing but nested callback multiple times(one within another).
+            callback hell code is difficult to understand or maintain. 
+            To avoid this problem, we can use "promises".
+
+Promises: 
+---------
+        An object which describes an eventual completion of Asynchronous operation/task.
+        It contains three states : 
+               ->pending (it's defualt-state)
+               ->fulfilled
+               ->rejected
+
+    Eg:
+       "I will give you money tommorow" is a promise.
+       It's Asynchronous operation because it's not completing Immediately this promise contain three states:
+            -> "fullfield": really gave the money. 
+            -> "rejected": not gave you money.
+            -> "pending": keep you waiting.
+
+        A promise can be handled using then and catch promise
+        .then(callback)
+        .catch(callback)
+
+APIs:
+-----
+    used to communicate between two softwares(client and server).
+    client requests to the server using API and server responds to the client using API.
+    APIs are created and maintained by server.
+
+    client receives a promise whenever it requests to the API, once the promise resolved, it receives the data through API.    
