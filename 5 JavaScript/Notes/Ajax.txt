@@ -74,10 +74,8 @@ Promises:
         .then(callback)
         .catch(callback)
 
-APIs:
------
-    used to communicate between two softwares(client and server).
-    client requests to the server using API and server responds to the client using API.
-    APIs are created and maintained by server.
-
-    client receives a promise whenever it requests to the API, once the promise resolved, it receives the data through API.    
+used for: 
+        -> fetching data from APIs.
+        -> delay the function.
+        -> reading file from node.js .
+        -> where task will not complete immediately.

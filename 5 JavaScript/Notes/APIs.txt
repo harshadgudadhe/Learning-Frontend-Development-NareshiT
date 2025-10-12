@@ -1,0 +1,22 @@
+Date:11/10/25                                /*APIs*/                                            Day(21)
+---------------------------------------------------------------------------------------------------------------------------------------
+
+APIs:
+-----
+    used to communicate between two softwares(client and server).
+    client requests to the server using API and server responds to the client using API.
+    APIs are created and maintained by server.
+
+    client receives a promise whenever it requests to the API, once the promise resolved, it receives the data through API.    
+
+To implement AJAX in our code, we have two ways:
+1. using XMLHttpRequest(old way)
+2. using fetch(new way)
+
+
+fetch(url,optional configurations)
+ .then((response)=> response.json())
+   .then((data)=> console.log(data))
+     .catch((error)=>console.log(error))
+
+  fetch is a browser inbuilt method to make API calls. fetch returns a promise which can be handled using then and catch.
